@@ -1,0 +1,501 @@
+09-23 14:46:02.910 2174-2186/? E/AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+Process: kr.co.iosystem.blackeyeonandroid, PID: 2174
+java.util.concurrent.TimeoutException: com.android.internal.os.BinderInternal$GcWatcher.finalize() timed out after 10 seconds
+at com.android.internal.os.BinderInternal$GcWatcher.finalize(BinderInternal.java:53)
+at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:202)
+at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:185)
+at java.lang.Thread.run(Thread.java:818)
+
+
+drawFrame failed: error 1281
+java.lang.Throwable
+at com.android.server.display.ColorFade.checkGlErrors(ColorFade.java:701)
+at com.android.server.display.ColorFade.checkGlErrors(ColorFade.java:693)
+at com.android.server.display.ColorFade.draw(ColorFade.java:401)
+at com.android.server.display.ColorFade.prepare(ColorFade.java:185)
+at com.android.server.display.DisplayPowerState.prepareColorFade(DisplayPowerState.java:177)
+at com.android.server.display.DisplayPowerController.animateScreenStateChange(DisplayPowerController.java:916)
+at com.android.server.display.DisplayPowerController.updatePowerState(DisplayPowerController.java:592)
+at com.android.server.display.DisplayPowerController.-wrap5(DisplayPowerController.java)
+at com.android.server.display.DisplayPowerController$DisplayControllerHandler.handleMessage(DisplayPowerController.java:1204)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+at com.android.server.ServiceThread.run(ServiceThread.java:46)
+
+
+09-25 08:56:54.441 2119-2135/com.google.android.gms W/MessageQueue: Handler (lhv) {4421d48} sending message to a Handler on a dead thread
+java.lang.IllegalStateException: Handler (lhv) {4421d48} sending message to a Handler on a dead thread
+at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+at android.os.Handler.enqueueMessage(Handler.java:631)
+at android.os.Handler.sendMessageAtTime(Handler.java:600)
+at android.os.Handler.sendMessageDelayed(Handler.java:570)
+at android.os.Handler.sendMessage(Handler.java:507)
+at lhv.a(:com.google.android.gms:0)
+at lht.c(:com.google.android.gms:9)
+at lht.a(:com.google.android.gms:22)
+at kid.a(:com.google.android.gms:0)
+at kin.onTransact(:com.google.android.gms:2)
+at android.os.Binder.execTransact(Binder.java:453)
+
+Task 132 failed or timed out. Client 8357794441892207 disconnecting from SearchService!
+java.util.concurrent.CancellationException: Task was cancelled.
+at com.google.common.util.concurrent.d.da(SourceFile:80)
+at com.google.common.util.concurrent.d.get(SourceFile:62)
+at com.google.common.util.concurrent.cf.o(SourceFile:2)
+at com.google.common.util.concurrent.ax.m(SourceFile:50)
+at com.google.common.util.concurrent.az.run(SourceFile:5)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bf.run(SourceFile:2)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5415)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:635)
+
+Background task telemetry.request_logging_by_intent failed
+java.util.concurrent.CancellationException: Task was cancelled.
+at com.google.common.util.concurrent.d.da(SourceFile:80)
+at com.google.common.util.concurrent.d.get(SourceFile:74)
+at com.google.android.apps.gsa.staticplugins.cp.d.run(SourceFile:5)
+at com.google.android.apps.gsa.tasks.bo.run(SourceFile:5)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ag.run(Unknown Source)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:6)
+
+
+Read error
+android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+at libcore.io.Posix.readBytes(Native Method)
+at libcore.io.Posix.read(Posix.java:169)
+at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+at android.system.Os.read(Os.java:367)
+at android.net.dhcp.DhcpClient$ReceiveThread.run(DhcpClient.java:361)
+
+E/AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+Process: kr.co.iosystem.blackeyeonandroid, PID: 2174
+java.util.concurrent.TimeoutException: com.android.internal.os.BinderInternal$GcWatcher.finalize() timed out after 10 seconds
+at com.android.internal.os.BinderInternal$GcWatcher.finalize(BinderInternal.java:53)
+at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:202)
+at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:185)
+at java.lang.Thread.run(Thread.java:818)
+
+
+
+Service com.android.email.service.EmailBroadcastProcessorService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@3bc3c57 that was originally bound here
+android.app.ServiceConnectionLeaked: Service com.android.email.service.EmailBroadcastProcessorService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@3bc3c57 that was originally bound here
+at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1092)
+at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:986)
+at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1303)
+at android.app.ContextImpl.bindService(ContextImpl.java:1286)
+at android.content.ContextWrapper.bindService(ContextWrapper.java:604)
+at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:181)
+at com.android.emailcommon.service.ServiceProxy.test(ServiceProxy.java:224)
+at com.android.email.service.EmailServiceUtils.isServiceAvailable(EmailServiceUtils.java:160)
+at com.android.email.provider.AccountReconciler.reconcileAccountsInternal(AccountReconciler.java:171)
+at com.android.email.provider.AccountReconciler.reconcileAccounts(AccountReconciler.java:115)
+at com.android.email.service.EmailBroadcastProcessorService.reconcileAndStartServices(EmailBroadcastProcessorService.java:305)
+at com.android.email.service.EmailBroadcastProcessorService.onBootCompleted(EmailBroadcastProcessorService.java:295)
+at com.android.email.service.EmailBroadcastProcessorService.onHandleIntent(EmailBroadcastProcessorService.java:130)
+at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:66)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+
+Failed to dispatch window animation state change.
+android.os.DeadObjectException
+at android.os.BinderProxy.transactNative(Native Method)
+at android.os.BinderProxy.transact(Binder.java:503)
+at android.view.IWindow$Stub$Proxy.onAnimationStarted(IWindow.java:520)
+at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:282)
+at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+at android.view.Choreographer.doFrame(Choreographer.java:603)
+at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:148)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+at com.android.server.ServiceThread.run(ServiceThread.java:46)
+
+
+09-24 00:24:02.931 1831-14941/? W/libc: pthread_create failed: couldn't allocate 1044480-bytes mapped space: Out of memory
+09-24 00:24:03.060 1831-14941/? W/libc: pthread_create failed: couldn't allocate 1044480-bytes mapped space: Out of memory
+09-24 00:24:03.192 1831-14941/? W/libc: pthread_create failed: couldn't allocate 1044480-bytes mapped space: Out of memory
+09-24 00:24:03.318 1831-14941/? W/libc: pthread_create failed: couldn't allocate 1044480-bytes mapped space: Out of memory
+09-24 00:24:03.448 1831-14941/? W/libc: pthread_create failed: couldn't allocate 1044480-bytes mapped space: Out of memory
+09-24 00:24:03.496 1831-3111/? W/libc: pthread_create failed: couldn't allocate 1069056-bytes mapped space: Out of memory
+09-24 00:24:03.496 1831-3111/? W/art: Throwing OutOfMemoryError "pthread_create (1040KB stack) failed: Try again"
+
+
+
+FATAL EXCEPTION: Thread-80
+Process: kr.co.iosystem.blackeyeonandroid, PID: 1831
+java.lang.OutOfMemoryError: pthread_create (1040KB stack) failed: Try again
+at java.lang.Thread.nativeCreate(Native Method)
+at java.lang.Thread.start(Thread.java:1063)
+at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:921)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1328)
+at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:584)
+at com.github.nkzawa.thread.EventThread.nextTick(EventThread.java:71)
+at com.github.nkzawa.thread.EventThread.exec(EventThread.java:52)
+at com.github.nkzawa.engineio.client.transports.WebSocket$1.onClose(WebSocket.java:62)
+at org.java_websocket.client.WebSocketClient.onWebsocketClose(WebSocketClient.java:342)
+at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:459)
+at org.java_websocket.WebSocketImpl.eot(WebSocketImpl.java:511)
+at org.java_websocket.SocketChannelIOHelper.read(SocketChannelIOHelper.java:16)
+at org.java_websocket.client.WebSocketClient.interruptableRun(WebSocketClient.java:229)
+at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:188)
+at java.lang.Thread.run(Thread.java:818)
+
+
+arch W/Search.LoginHelper: IO exception for scope: oauth2:https://www.googleapis.com/auth/googlenow
+java.io.IOException: NetworkError
+at com.google.android.gms.auth.k.f(Unknown Source)
+at com.google.android.gms.auth.c.a(Unknown Source)
+at com.google.android.gms.auth.c.c(Unknown Source)
+at com.google.android.gms.auth.b.a(Unknown Source)
+at com.google.android.gms.auth.b.a(Unknown Source)
+at com.google.android.gms.auth.b.a(Unknown Source)
+at com.google.android.apps.gsa.search.core.google.gaia.o.b(SourceFile:19)
+at com.google.android.apps.gsa.search.core.google.gaia.k.b(SourceFile:49)
+at com.google.android.apps.gsa.search.core.google.gaia.h.a(SourceFile:23)
+at com.google.android.apps.gsa.search.core.google.gaia.h.b(SourceFile:8)
+at com.google.android.apps.gsa.search.core.google.gaia.LoginHelper.b(SourceFile:278)
+at com.google.android.apps.gsa.search.core.google.gaia.y.call(SourceFile:3)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ag.run(Unknown Source)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:6)
+
+
+java.lang.IllegalStateException: Handler (lhv) {5210047} sending message to a Handler on a dead thread
+at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+at android.os.Handler.enqueueMessage(Handler.java:631)
+at android.os.Handler.sendMessageAtTime(Handler.java:600)
+at android.os.Handler.sendMessageDelayed(Handler.java:570)
+at android.os.Handler.sendMessage(Handler.java:507)
+at lhv.a(:com.google.android.gms:0)
+at lht.c(:com.google.android.gms:9)
+at lht.a(:com.google.android.gms:22)
+at kid.a(:com.google.android.gms:0)
+at kin.onTransact(:com.google.android.gms:2)
+at andoid.os.Binder.execTransact(Binder.java:453
+
+
+
+: Authorization exception
+com.google.android.apps.gsa.shared.io.HttpException: 401
+at com.google.android.apps.gsa.shared.io.HttpResponseData.a(SourceFile:44)
+at com.google.android.apps.gsa.search.core.o.e.onSuccess(SourceFile:18)
+at com.google.common.util.concurrent.az.run(SourceFile:16)
+at com.google.common.util.concurrent.br.execute(SourceFile:3)
+at com.google.common.util.concurrent.d.a(SourceFile:264)
+at com.google.common.util.concurrent.d.a(SourceFile:220)
+at com.google.common.util.concurrent.d.set(SourceFile:138)
+at com.google.common.util.concurrent.SettableFuture.set(SourceFile:2)
+at com.google.android.apps.gsa.search.core.o.az.a(SourceFile:61)
+at org.chromium.net.impl.cr.a(SourceFile:6)
+at org.chromium.net.impl.x.run(SourceFile:18)
+at com.google.android.apps.gsa.search.core.o.bc.run(SourceFile:2)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ag.run(Unknown Source)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bo.run(SourceFile:4)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:6)
+
+
+09-25 08:56:57.745 15457-15617/com.google.android.gms.unstable W/DG.WV: Widevine DRM not supported on this device
+android.media.UnsupportedSchemeException: Failed to instantiate drm object.
+at android.media.MediaDrm.native_setup(Native Method)
+at android.media.MediaDrm.<init>(MediaDrm.java:215)
+at ozj.run(:com.google.android.gms:9)
+at mge.run(:com.google.android.gms:24)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at mlf.run(:com.google.android.gms:0)
+at java.lang.Thread.run(Thread.java:818)
+
+
+09-25 08:57:28.725 1494-15127/system_process E/JavaBinder: *** Uncaught remote exception!  (Exceptions are not yet supported across processes.)
+java.lang.RuntimeException: android.os.RemoteException: Invalid package name
+at android.os.Parcel.writeException(Parcel.java:1520)
+at android.os.Binder.execTransact(Binder.java:459)
+Caused by: android.os.RemoteException: Invalid package name
+at com.android.server.GraphicsStatsService.requestBufferForProcess(GraphicsStatsService.java:97)
+at android.view.IGraphicsStats$Stub.onTransact(IGraphicsStats.java:55)
+at android.os.Binder.execTransact(Binder.java:453)
+09-25 08:57:28.725 1783-1783/com.android.phone W/HardwareRenderer: Could not acquire gfx stats buffer
+java.lang.NullPointerException: Attempt to invoke virtual method 'int android.os.ParcelFileDescriptor.getFd()' on a null object reference
+at android.view.ThreadedRenderer$ProcessInitializer.initGraphicsStats(ThreadedRenderer.java:461)
+at android.view.ThreadedRenderer$ProcessInitializer.init(ThreadedRenderer.java:447)
+at android.view.ThreadedRenderer.<init>(ThreadedRenderer.java:126)
+at android.view.HardwareRenderer.create(HardwareRenderer.java:436)
+at android.view.ViewRootImpl.enableHardwareAcceleration(ViewRootImpl.java:755)
+at android.view.ViewRootImpl.setView(ViewRootImpl.java:488)
+at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:310)
+at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:85)
+at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3169)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2481)
+at android.app.ActivityThread.-wrap11(ActivityThread.java)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5415)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:635)
+
+
+09-25 08:57:40.405 1916-1916/com.google.android.googlequicksearchbox:search E/SearchServiceStarter: Task 132 failed or timed out. Client 8428163168502358 disconnecting from SearchService!
+java.util.concurrent.CancellationException: Task was cancelled.
+at com.google.common.util.concurrent.d.da(SourceFile:80)
+at com.google.common.util.concurrent.d.get(SourceFile:62)
+at com.google.common.util.concurrent.cf.o(SourceFile:2)
+at com.google.common.util.concurrent.ax.m(SourceFile:50)
+at com.google.common.util.concurrent.az.run(SourceFile:5)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bf.run(SourceFile:2)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5415)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:635)
+
+FATAL EXCEPTION: Thread-287
+Process: kr.co.iosystem.blackeyeonandroid, PID: 27556
+java.lang.OutOfMemoryError: pthread_create (1040KB stack) failed: Try again
+at java.lang.Thread.nativeCreate(Native Method)
+at java.lang.Thread.start(Thread.java:1063)
+at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:921)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1328)
+at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:584)
+at com.github.nkzawa.thread.EventThread.nextTick(EventThread.java:71)
+at com.github.nkzawa.thread.EventThread.exec(EventThread.java:52)
+at com.github.nkzawa.engineio.client.transports.WebSocket$1.onClose(WebSocket.java:62)
+at org.java_websocket.client.WebSocketClient.onWebsocketClose(WebSocketClient.java:342)
+at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:459)
+at org.java_websocket.WebSocketImpl.eot(WebSocketImpl.java:511)
+at org.java_websocket.SocketChannelIOHelper.read(SocketChannelIOHelper.java:16)
+at org.java_websocket.client.WebSocketClient.interruptableRun(WebSocketClient.java:229)
+at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:188)
+at java.lang.Thread.run(Thread.java:818)
+
+drawFrame failed: error 1281
+java.lang.Throwable
+at com.android.server.display.ColorFade.checkGlErrors(ColorFade.java:701)
+at com.android.server.display.ColorFade.checkGlErrors(ColorFade.java:693)
+at com.android.server.display.ColorFade.draw(ColorFade.java:401)
+at com.android.server.display.ColorFade.prepare(ColorFade.java:185)
+at com.android.server.display.DisplayPowerState.prepareColorFade(DisplayPowerState.java:177)
+at com.android.server.display.DisplayPowerController.animateScreenStateChange(DisplayPowerController.java:916)
+at com.android.server.display.DisplayPowerController.updatePowerState(DisplayPowerController.java:592)
+at com.android.server.display.DisplayPowerController.-wrap5(DisplayPowerController.java)
+at com.android.server.display.DisplayPowerController$DisplayControllerHandler.handleMessage(DisplayPowerController.java:1204)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+at com.android.server.ServiceThread.run(ServiceThread.java:46)
+
+Search.LoginHelper: IO exception for scope: oauth2:https://www.googleapis.com/auth/googlenow
+java.io.IOException: NetworkError
+at com.google.android.gms.auth.d.k(Unknown Source)
+at com.google.android.gms.auth.c.a(Unknown Source)
+at com.google.android.gms.auth.c.b(Unknown Source)
+at com.google.android.gms.auth.b.a(Unknown Source)
+at com.google.android.gms.auth.b.a(Unknown Source)
+at com.google.android.apps.gsa.search.core.google.gaia.p.b(SourceFile:12)
+at com.google.android.apps.gsa.search.core.google.gaia.l.b(SourceFile:49)
+at com.google.android.apps.gsa.search.core.google.gaia.i.a(SourceFile:23)
+at com.google.android.apps.gsa.search.core.google.gaia.i.b(SourceFile:8)
+at com.google.android.apps.gsa.search.core.google.gaia.q.b(SourceFile:278)
+at com.google.android.apps.gsa.search.core.google.gaia.s.call(SourceFile:5)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at com.google.android.apps.gsa.shared.util.concurrent.a.at.run(SourceFile:18)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bh.run(SourceFile:4)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bh.run(SourceFile:4)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ag.run(SourceFile:6)
+
+
+09-25 11:04:54.388 18928-10100/com.google.android.googlequicksearchbox:search E/VelvetBackgroundTasksIm: Background task telemetry.request_logging_by_intent failed
+java.util.concurrent.CancellationException: Task was cancelled.
+at com.google.common.util.concurrent.d.cF(SourceFile:75)
+at com.google.common.util.concurrent.d.get(SourceFile:69)
+at com.google.android.apps.gsa.staticplugins.bw.d.run(SourceFile:5)
+at com.google.android.apps.gsa.tasks.bk.run(SourceFile:5)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:423)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at com.google.android.apps.gsa.shared.util.concurrent.a.at.run(SourceFile:18)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bh.run(SourceFile:4)
+at com.google.android.apps.gsa.shared.util.concurrent.a.bh.run(SourceFile:4)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ag.run(SourceFile:6)
+
+
+09-25 11:04:54.394 18928-18928/com.google.android.googlequicksearchbox:search E/SearchServiceStarter: Task 132 failed or timed out. Client 83247730466958181 disconnecting from SearchService!
+java.util.concurrent.CancellationException: Task was cancelled.
+at com.google.common.util.concurrent.d.cF(SourceFile:75)
+at com.google.common.util.concurrent.d.get(SourceFile:57)
+at com.google.common.util.concurrent.ce.n(SourceFile:2)
+at com.google.common.util.concurrent.at.l(SourceFile:52)
+at com.google.common.util.concurrent.av.run(SourceFile:5)
+at com.google.android.apps.gsa.shared.util.concurrent.a.ay.run(SourceFile:2)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5415)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:635)
+
+
+Low on memory:
+09-23 21:19:41.409 1494-9649/system_process I/ActivityManager:   ntv   N    52100 kB: mysqld (pid 1165) native
+ntv   N    17585 kB: mediaserver (pid 1141) native
+ntv   N     7867 kB: zygote (pid 1149) native
+ntv   N     7446 kB: surfaceflinger (pid 1134) native
+ntv   N     3562 kB: logd (pid 1089) native
+ntv   N     2074 kB: ueventd (pid 1079) native
+ntv   N     1520 kB: php (pid 1188) native
+ntv   N     1516 kB: php (pid 1171) native
+ntv   N     1516 kB: php (pid 1211) native
+ntv   N     1305 kB: sdcard (pid 1563) native
+ntv   N     1128 kB: wpa_supplicant (pid 1724) native
+ntv   N     1057 kB: drmserver (pid 1140) native
+ntv   N      905 kB: vold (pid 1128) native
+ntv   N      888 kB: adbd (pid 1154) native
+ntv   N      885 kB: netd (pid 1136) native
+ntv   N      856 kB: healthd (pid 1131) native
+ntv   N      754 kB: /init (pid 1) native
+ntv   N      571 kB: keystore (pid 1143) native
+ntv   N      528 kB: crond (pid 1156) native
+ntv   N      527 kB: gatekeeperd (pid 1150) native
+ntv   N     3901 kB: (Other native)
+09-23 21:19:41.410 1494-9649/system_process I/ActivityManager:   sys   P    55507 kB: system (pid 1494) fixed
+pers  P    30928 kB: com.android.systemui (pid 1579) fixed
+pers  P    11211 kB: com.android.phone (pid 1782) fixed
+pers  P     5127 kB: org.android_x86.analytics (pid 1774) fixed
+fore  T  1307051 kB: kr.co.iosystem.blackeyeonandroid (pid 1618) top-activity
+fore  R    41501 kB: com.google.android.gms (pid 9617) broadcast
+fore  R    15570 kB: com.google.process.gapps (pid 9633) provider
+com.google.android.gsf/.gservices.GservicesProvider<=Proc{9617:com.google.android.gms/u0a10}
+vis   SB   45435 kB: com.google.android.gms.persistent (pid 1757) service
+com.google.android.gms/com.google.android.location.geocode.GeocodeService<=Proc{1494:system/1000}
+vis   SB    6184 kB: com.google.android.googlequicksearchbox:interactor (pid 1729) service
+com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService<=Proc{1494:system/1000}
+prcp  IB    8948 kB: com.google.android.inputmethod.korean (pid 1735) service
+com.google.android.inputmethod.korean/.KoreanIme<=Proc{1494:system/1000}
+home  HO   16474 kB: com.android.launcher3 (pid 1804) home
+1652427 kB: TOTAL
+09-23 21:19:41.410 1494-9649/system_process I/ActivityManager:   MemInfo: 43032 kB slab, 1260072 kB shmem, 16048 kB vm alloc, 6140 kB page tables 4184 kB kernel stack
+3800 kB buffers, 1407428 kB cached, 1235728 kB mapped, 53948 kB free
+Free RAM: 229448 kB
+Used RAM: 2981903 kB
+Lost RAM: -1250707 kB
+
+
+FATAL EXCEPTION: Thread-11746
+Process: kr.co.iosystem.blackeyeonandroid, PID: 1618
+java.lang.OutOfMemoryError: pthread_create (1040KB stack) failed: Try again
+at java.lang.Thread.nativeCreate(Native Method)
+at java.lang.Thread.start(Thread.java:1063)
+at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:921)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1337)
+at com.android.okhttp.ConnectionPool.addConnection(ConnectionPool.java:208)
+at com.android.okhttp.ConnectionPool.recycle(ConnectionPool.java:198)
+at com.android.okhttp.OkHttpClient$1.recycle(OkHttpClient.java:111)
+at com.android.okhttp.internal.http.HttpConnection$AbstractSource.endOfInput(HttpConnection.java:377)
+at com.android.okhttp.internal.http.HttpConnection$FixedLengthSource.read(HttpConnection.java:426)
+at com.android.okhttp.okio.RealBufferedSource$1.read(RealBufferedSource.java:349)
+at java.io.InputStreamReader.read(InputStreamReader.java:233)
+at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+at java.io.BufferedReader.readLine(BufferedReader.java:397)
+at com.github.nkzawa.engineio.client.transports.PollingXHR$Request.onLoad(PollingXHR.java:292)
+at com.github.nkzawa.engineio.client.transports.PollingXHR$Request.access$600(PollingXHR.java:135)
+at com.github.nkzawa.engineio.client.transports.PollingXHR$Request$1.run(PollingXHR.java:214)
+at java.lang.Thread.run(Thread.java:818)
+
+
+android.media.UnsupportedSchemeException: Failed to instantiate drm object.
+at android.media.MediaDrm.native_setup(Native Method)
+at android.media.MediaDrm.<init>(MediaDrm.java:215)
+at omq.a(:com.google.android.gms:122)
+at ojj.run(:com.google.android.gms:1095)
+at llt.run(:com.google.android.gms:450)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at lqc.run(:com.google.android.gms:17)
+at java.lang.Thread.run(Thread.java:818)
+
+09-25 16:05:59.378 2202-24640/? I/art: Alloc sticky concurrent mark sweep GC freed 79323(2MB) AllocSpace objects, 0(0B) LOS objects, 45% free, 19MB/34MB, paused 779us total 37.735ms
+09-25 16:05:59.378 2202-24337/? I/art: WaitForGcToComplete blocked for 321.159ms for cause Alloc
+
+09-25 16:05:59.378 2202-24337/? I/art: Starting a blocking GC Alloc
+09-25 16:05:59.379 2202-25605/? I/art: Waiting for a blocking GC Alloc
+
+
+09-25 21:44:01.996 9418-9427/? E/AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+Process: kr.co.iosystem.blackeyeonandroid, PID: 9418
+java.util.concurrent.TimeoutException: com.android.internal.os.BinderInternal$GcWatcher.finalize() timed out after 10 seconds
+at com.android.internal.os.BinderInternal$GcWatcher.finalize(BinderInternal.java:53)
+at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:202)
+at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:185)
+at java.lang.Thread.run(Thread.java:818)
+
+
+
+
+Could not acquire gfx stats buffer
+java.lang.NullPointerException: Attempt to invoke virtual method 'int android.os.ParcelFileDescriptor.getFd()' on a null object reference
+at android.view.ThreadedRenderer$ProcessInitializer.initGraphicsStats(ThreadedRenderer.java:461)
+at android.view.ThreadedRenderer$ProcessInitializer.init(ThreadedRenderer.java:447)
+at android.view.ThreadedRenderer.<init>(ThreadedRenderer.java:126)
+at android.view.HardwareRenderer.create(HardwareRenderer.java:436)
+at android.view.ViewRootImpl.enableHardwareAcceleration(ViewRootImpl.java:755)
+at android.view.ViewRootImpl.setView(ViewRootImpl.java:488)
+at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:310)
+at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:85)
+at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3169)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2481)
+at android.app.ActivityThread.-wrap11(ActivityThread.java)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5415)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:635)
