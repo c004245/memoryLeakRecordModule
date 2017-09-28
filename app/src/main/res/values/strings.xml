@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WebRTC Record</string>
+
+    <string name="button_call">Call</string>
+    <string name="button_hangup">Hang up</string>
+    <string name="button_room">Room</string>
+
+    <string name="wall_clocks_format">yyyy-MM-dd a hh:mm:ss</string>
+
+</resources>
